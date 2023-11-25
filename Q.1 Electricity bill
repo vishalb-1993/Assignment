@@ -6,7 +6,11 @@ int main()
     float bill = 0;
     cout << "Enter the number of units: ";
     cin >> units;
-    if (units <= 50) 
+    if(units<0)
+    {
+      bill=0;
+}
+     else if (units <= 50) 
     {
         bill = units * 1;
     } else if (units > 50 && units <= 150) 
